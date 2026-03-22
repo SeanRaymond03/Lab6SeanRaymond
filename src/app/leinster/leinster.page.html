@@ -1,17 +1,21 @@
+<!-- Header with back button and page title -->
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
+      <!-- Back button returns to home page -->
       <ion-back-button defaultHref="/home"></ion-back-button>
     </ion-buttons>
     <ion-title>Leinster</ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!-- Display the Leinster flag and button to view counties -->
 <ion-content>
   <h2>Leinster</h2>
   <img
-    src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_Leinster.svg"
+    src="assets/flags/leinster.svg"
     width="200" height="150">
 
+  <!-- Button navigates to the Leinster Counties page -->
   <ion-button (click)="goToCounties()">Go To Counties</ion-button>
 </ion-content>

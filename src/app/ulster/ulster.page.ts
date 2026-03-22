@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 
+// Ulster page component - displays the Ulster flag
 @Component({
   selector: 'app-ulster',
   templateUrl: './ulster.page.html',

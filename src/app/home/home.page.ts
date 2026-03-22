@@ -10,8 +10,10 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonicModule],
 })
 export class HomePage {
+  // Inject the router to allow navigation between pages
   constructor(private router: Router) {}
 
+  // Navigate to the selected province page
   goTo(page: string) {
     this.router.navigate(['/' + page]);
   }

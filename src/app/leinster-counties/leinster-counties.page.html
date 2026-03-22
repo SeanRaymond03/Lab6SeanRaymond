@@ -1,15 +1,19 @@
+<!-- Header with back button and page title -->
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
+      <!-- Back button returns to Leinster page -->
       <ion-back-button defaultHref="/leinster"></ion-back-button>
     </ion-buttons>
     <ion-title>Leinster Counties</ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!-- Loop through the counties array and display each one -->
 <ion-content>
   <h2>Leinster Counties</h2>
   <ul>
+    <!-- ngFor loops through the counties array from the TypeScript file -->
     <li *ngFor="let county of counties">{{ county }}</li>
   </ul>
 </ion-content>
